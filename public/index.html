@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minesweeper</title>
+ <link rel="icon" type="image/png" href="kr.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Minesweeper</h1>
+  <p class="tagline">5 mines are hidden on the grid. Clear every safe cell.</p>
+
+  <div class="hud">
+    <div class="hud-item">
+      <div class="hud-label">Revealed</div>
+      <div class="hud-value" id="revealed-count">0<span class="hud-total">/20</span></div>
+    </div>
+  </div>
+
+  <div class="grid" id="grid" aria-label="Minesweeper grid"></div>
+
+  <div class="status" id="status">Loading grid…</div>
+
+  <div class="final-banner" id="final-banner" hidden>
+    <div class="final-title" id="final-title"></div>
+    <div class="final-sub" id="final-sub"></div>
+  </div>
+
+  <footer>
+    <button class="reset" id="reset">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12a9 9 0 1 1-2.64-6.36"/>
+        <polyline points="21 3 21 9 15 9"/>
+      </svg>
+      New game
+    </button>
+  </footer>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "minesweeper"
+    }
+  },
+  "rewrites": [
+    { "source": "/new-game", "destination": "/api/index" },
+    { "source": "/reveal", "destination": "/api/index" }
+  ]
+}

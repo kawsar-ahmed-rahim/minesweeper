@@ -1,0 +1,14 @@
+{
+  "name": "minesweeper-web",
+  "version": "1.0.0",
+  "description": "Browser interface for a C minesweeper game, served via a Node backend",
+  "main": "server.js",
+  "scripts": {
+    "build:c": "gcc -o minesweeper minesweeper.c",
+    "vercel-build": "gcc -o minesweeper minesweeper.c",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
